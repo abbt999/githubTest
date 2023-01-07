@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
         print("kaladag")
         print("error")
+        print("another error")
         
         print("interface")
 
