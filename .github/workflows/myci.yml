@@ -1,21 +1,18 @@
-#1
+
 name: myci
 
-#2 
+ 
 on: push
 
-#3 jobs:
+
+jobs:
 build:
 runs-on: macos-latest
-#4
 steps:
-#5
-- uses: actions/checkout@v2 
-#6
+- uses: actions/checkout@v2
 - name: Install fastlane
 run: |
-bundle install 
-#7
-    - name: Execute fastlane
+bundle install
+- name: Execute fastlane
       run: |
         bundle exec fastlane test
